@@ -11,9 +11,9 @@ class ScartchAreaTest {
 
 
     @Test
-    void simpleTestsForValidCases(String s, Boolean result){
+    void simpleTestsForValidCases(){
 
-        Integer	nineC	=	9;
+/*        Integer	nineC	=	9;
         Integer	nineD	=	9;
         System.out.println(nineC	==	nineD);//true
         System.out.println(nineC.equals(nineD));//true
@@ -21,15 +21,15 @@ class ScartchAreaTest {
         nineC.equals(nineD);
 
         Object x;
-        x.toString();
+        x.toString();*/
 
     }
-    boolean equals ( Object o){
+    /*boolean equals ( Object o){
         if ( o instanceof Integer i) {
             if ( i == this )
                 return true;
         }
         return false;
-    }
+    }*/
 }
 

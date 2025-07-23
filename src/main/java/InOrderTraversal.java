@@ -39,8 +39,10 @@ class Solution {
                 stack.push(cur.right);
             }
         }
+        System.out.println();
         return ans;
     }
+
     public List<Integer> postorderTraversalNR(TreeNode root) {
         List<Integer> results = new ArrayList<>();
         Stack<TreeNode> stack = new Stack<>();

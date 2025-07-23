@@ -1,4 +1,6 @@
-import java.util.LinkedHashMap;
+import java.util.*;
+import java.util.stream.Collectors;
+
 // https://leetcode.com/problems/lru-cache/description/
 public class LRUCache {
 
@@ -20,6 +22,15 @@ public class LRUCache {
     }
 
     public void put(int key, int value) {
+        int[] arr = {1,2,3};
+        //as arr is of 'int' while Java Collections need Integer so need to use boxed
+        HashSet<Integer> s = new HashSet<>(Arrays.stream(arr).boxed().collect(Collectors.toSet()));
+
+
+
+        String[] fruitArray = {"apple", "orange", "banana", "apple", "pear"};
+        HashSet<String> fruitSet = new HashSet<>(Arrays.asList(fruitArray));
+
         boolean keyExists = cache.containsKey(key);
 
         if (keyExists)
